@@ -16,8 +16,8 @@
 #import "CALoginManager.h"
 #import "MBProgressHUD.h"
 
-#define PAY_URL @"http://47.89.194.197:8081/ChefAdia-1.0-SNAPSHOT/menu/addOrder"
-#define GET_TICKET_URL @"http://47.89.194.197:8081/ChefAdia-1.0-SNAPSHOT/menu/getTickInfo"
+#define PAY_URL @"http://106.14.238.63/ChefAdia-1.0-SNAPSHOT/menu/addOrder"
+#define GET_TICKET_URL @"http://106.14.238.63/ChefAdia-1.0-SNAPSHOT/menu/getTickInfo"
 
 @interface CAFoodPayViewController (){
     NSString *fontName;

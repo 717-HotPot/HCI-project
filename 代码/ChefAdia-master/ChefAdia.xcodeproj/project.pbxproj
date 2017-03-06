@@ -469,7 +469,7 @@
 				TargetAttributes = {
 					246BE42A1DCB4CC80055FB97 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = VEBQ28K9EA;
+						DevelopmentTeam = 7D3BDLX3AE;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -732,10 +732,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = VEBQ28K9EA;
+				DEVELOPMENT_TEAM = 7D3BDLX3AE;
 				INFOPLIST_FILE = ChefAdia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.krayc.ChefAdia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylin.ChefAdia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -750,10 +750,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = VEBQ28K9EA;
+				DEVELOPMENT_TEAM = 7D3BDLX3AE;
 				INFOPLIST_FILE = ChefAdia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.krayc.ChefAdia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylin.ChefAdia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

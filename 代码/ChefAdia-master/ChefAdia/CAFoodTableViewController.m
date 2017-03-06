@@ -18,8 +18,8 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "MBProgressHUD.h"
 
-#define MENU_URL @"http://47.89.194.197:8081/ChefAdia-1.0-SNAPSHOT/menu/getMenu"
-#define GET_EASY_ORDER_URL @"http://47.89.194.197:8081/ChefAdia-1.0-SNAPSHOT/user/getEasyOrder"
+#define MENU_URL @"http://106.14.238.63/ChefAdia-1.0-SNAPSHOT/menu/getMenu"
+#define GET_EASY_ORDER_URL @"http://106.14.238.63/ChefAdia-1.0-SNAPSHOT/user/getEasyOrder"
 
 @interface CAFoodTableViewController (){
     NSString *fontName;

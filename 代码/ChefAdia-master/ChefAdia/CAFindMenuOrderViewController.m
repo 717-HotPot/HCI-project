@@ -15,8 +15,8 @@
 #import "CALoginManager.h"
 #import "MBProgressHUD.h"
 
-#define GET_MMENU_DETAIL_URL @"http://47.89.194.197:8081/ChefAdia-1.0-SNAPSHOT/user/getMMenu"
-#define ORDER_MMENU_URL @"http://47.89.194.197:8081/ChefAdia-1.0-SNAPSHOT/menu/addMOrder"
+#define GET_MMENU_DETAIL_URL @"http://106.14.238.63/ChefAdia-1.0-SNAPSHOT/user/getMMenu"
+#define ORDER_MMENU_URL @"http://106.14.238.63/ChefAdia-1.0-SNAPSHOT/menu/addMOrder"
 
 @interface CAFindMenuOrderViewController ()
 

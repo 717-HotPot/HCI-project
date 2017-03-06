@@ -12,9 +12,9 @@
 #import "Utilities.h"
 #import "MBProgressHUD.h"
 
-#define ALL_TICKET_URL @"http://47.89.194.197:8081/ChefAdia-1.0-SNAPSHOT/menu/getAllTicket"
-#define BUY_TICKET_URL @"http://47.89.194.197:8081/ChefAdia-1.0-SNAPSHOT/menu/buyTick"
-#define GET_TICKET_URL @"http://47.89.194.197:8081/ChefAdia-1.0-SNAPSHOT/menu/getTickInfo"
+#define ALL_TICKET_URL @"http://106.14.238.63/ChefAdia-1.0-SNAPSHOT/menu/getAllTicket"
+#define BUY_TICKET_URL @"http://106.14.238.63/ChefAdia-1.0-SNAPSHOT/menu/buyTick"
+#define GET_TICKET_URL @"http://106.14.238.63/ChefAdia-1.0-SNAPSHOT/menu/getTickInfo"
 
 @interface CAFindTicketTableViewController ()
 

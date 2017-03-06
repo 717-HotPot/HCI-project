@@ -16,7 +16,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "MBProgressHUD.h"
 
-#define AVATAR_URL @"http://47.89.194.197:8081/ChefAdia-1.0-SNAPSHOT/user/modAva"
+#define AVATAR_URL @"http://106.14.238.63/ChefAdia-1.0-SNAPSHOT/user/modAva"
 
 @interface CAMeLoginTableViewController (){
     NSString *fontName;

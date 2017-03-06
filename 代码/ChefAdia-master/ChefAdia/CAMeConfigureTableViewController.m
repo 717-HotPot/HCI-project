@@ -12,8 +12,8 @@
 #import "AFHTTPSessionManager.h"
 #import "CALoginManager.h"
 
-#define PHONE_URL @"http://47.89.194.197:8081/ChefAdia-1.0-SNAPSHOT/user/modPhone"
-#define ADDRESS_URL @"http://47.89.194.197:8081/ChefAdia-1.0-SNAPSHOT/user/modAddr"
+#define PHONE_URL @"http://106.14.238.63/ChefAdia-1.0-SNAPSHOT/user/modPhone"
+#define ADDRESS_URL @"http://106.14.238.63/ChefAdia-1.0-SNAPSHOT/user/modAddr"
 
 @interface CAMeConfigureTableViewController (){
     NSString *fontName;

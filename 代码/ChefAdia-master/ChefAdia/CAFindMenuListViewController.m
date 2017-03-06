@@ -12,7 +12,7 @@
 #import "AFNetworking.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
-#define UPLOAD_MMENU_URL @"http://47.89.194.197:8081/ChefAdia-1.0-SNAPSHOT/user/addMMenu"
+#define UPLOAD_MMENU_URL @"http://106.14.238.63/ChefAdia-1.0-SNAPSHOT/user/addMMenu"
 
 @interface CAFindMenuListViewController ()
 

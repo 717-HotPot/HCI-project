@@ -14,8 +14,8 @@
 #import "CAFindMenuListViewController.h"
 #import "MBProgressHUD.h"
 
-#define MMENU_URL @"http://47.89.194.197:8081/ChefAdia-1.0-SNAPSHOT/user/getMList"
-#define MMENU_DELETE_URL @"http://47.89.194.197:8081/ChefAdia-1.0-SNAPSHOT/user/deleteMMenu"
+#define MMENU_URL @"http://106.14.238.63/ChefAdia-1.0-SNAPSHOT/user/getMList"
+#define MMENU_DELETE_URL @"http://106.14.238.63/ChefAdia-1.0-SNAPSHOT/user/deleteMMenu"
 
 @interface CAFindMenuTableViewController ()
 

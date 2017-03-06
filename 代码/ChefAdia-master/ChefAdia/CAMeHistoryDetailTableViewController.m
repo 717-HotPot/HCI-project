@@ -13,8 +13,8 @@
 #import "AFHTTPSessionManager.h"
 #import "MBProgressHUD.h"
 
-#define ORDER_DETAIL_URL @"http://47.89.194.197:8081/ChefAdia-1.0-SNAPSHOT/menu/getOrder"
-#define COMMENT_URL @"http://47.89.194.197:8081/ChefAdia-1.0-SNAPSHOT/menu/comment"
+#define ORDER_DETAIL_URL @"http://106.14.238.63/ChefAdia-1.0-SNAPSHOT/menu/getOrder"
+#define COMMENT_URL @"http://106.14.238.63/ChefAdia-1.0-SNAPSHOT/menu/comment"
 
 @interface CAMeHistoryDetailTableViewController ()
 

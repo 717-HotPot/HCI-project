@@ -14,7 +14,7 @@
 #import "CALoginManager.h"
 #import "MBProgressHUD.h"
 
-#define SIGNUP_URL @"http://47.89.194.197:8081/ChefAdia-1.0-SNAPSHOT/user/register"
+#define SIGNUP_URL @"http://106.14.238.63/ChefAdia-1.0-SNAPSHOT/user/register"
 
 @interface CASignUpViewController (){
     NSString *fontName;

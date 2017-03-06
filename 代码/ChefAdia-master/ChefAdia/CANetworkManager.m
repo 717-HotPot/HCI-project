@@ -12,11 +12,12 @@
 #import "AFHTTPSessionManager.h"
 #import "JSONKit.h"
 
-#define TEST_URL @"http://47.89.194.197:8081/ChefAdia-1.0-SNAPSHOT/user/getMenu"
+#define TEST_URL @"http://106.14.238.63/ChefAdia-1.0-SNAPSHOT/user/getMenu"
 
 @implementation CANetworkManager
 
 static CANetworkManager* _instance = nil;
+
 
 #pragma mark - CONSTRUCTORS
 
