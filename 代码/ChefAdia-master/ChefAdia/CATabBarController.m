@@ -112,7 +112,14 @@
 }
 
 - (void)setColor{
-    self.navigationController.navigationBar.barTintColor = color;
+    // 顶部导航栏颜色,改了!!!!!
+//    self.navigationController.navigationBar.barTintColor = [UIColor redColor];
+    
+    UIImage *backgroundImage = [UIImage imageNamed:@"FIND_TICKET"];  //获取图片
+    
+    //设置背景
+    [self.navigationController.navigationBar setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
+    
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     [self.navigationController.navigationBar setTitleTextAttributes:@{
                                                                       NSForegroundColorAttributeName : [UIColor whiteColor]
