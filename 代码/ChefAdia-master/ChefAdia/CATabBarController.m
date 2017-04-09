@@ -145,6 +145,7 @@
         {
             [self.naviItem setTitle:@"ME"];
             self.naviItem.rightBarButtonItems = nil;
+           
         }
             break;
         default:
