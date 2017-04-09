@@ -15,11 +15,14 @@
 @property (nonatomic, nonnull) NSString *foodid;
 @property (nonatomic) double price;
 @property (nonatomic, nonnull) NSString *pic;
-@property (nonatomic) int likes;
-@property (nonatomic) int dislikes;
-@property (nonnull, nonatomic) NSArray *extras;
+
+//!删除!!!
+//@property (nonatomic) int likes;
+//@property (nonatomic) int dislikes;
+//@property (nonnull, nonatomic) NSArray *extras;
 @property (nonnull, nonatomic) NSString *foodDescription;
 
-- (_Nonnull instancetype)initWithName:(NSString *_Nonnull)name andID:(NSString *_Nonnull)foodid andPrice:(double)price andPic:(NSString *_Nonnull)pic andLikes:(int)likes andDislikes:(int)dislikes andExtras:(NSArray *_Nonnull)extras andDescription:(NSString *_Nonnull)des;
+// 修改构造器!!!
+- (_Nonnull instancetype)initWithName:(NSString *_Nonnull)name andID:(NSString *_Nonnull)foodid andPrice:(double)price andPic:(NSString *_Nonnull)pic andDescription:(NSString *_Nonnull)des;
 
 @end

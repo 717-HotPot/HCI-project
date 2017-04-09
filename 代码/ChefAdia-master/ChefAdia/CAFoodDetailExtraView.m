@@ -47,9 +47,9 @@
                                                                       andID:[Dict objectForKey:@"foodid"]
                                                                    andPrice:[[Dict objectForKey:@"price"] doubleValue]
                                                                      andPic:[Dict objectForKey:@"pic"]
-                                                                   andLikes:[[Dict objectForKey:@"good_num"] intValue]
-                                                                andDislikes:[[Dict objectForKey:@"bad_num"] intValue]
-                                                                  andExtras:[Dict objectForKey:@"extraFood"]
+//                                                                   andLikes:[[Dict objectForKey:@"good_num"] intValue]
+//                                                                andDislikes:[[Dict objectForKey:@"bad_num"] intValue]
+//                                                                  andExtras:[Dict objectForKey:@"extraFood"]
                                                              andDescription:[Dict objectForKey:@"description"]];
             [self.extraArr addObject:caFoodDetail];
         }
@@ -153,12 +153,15 @@
     CAFoodDetail *food = [self.extraArr objectAtIndex:indexPath.row];
     
     [cell.nameLabel setText:[NSString stringWithFormat:@"%@", food.name]];
-    [cell.goodLabel setText:[NSString stringWithFormat:@"%d", food.likes]];
-    [cell.badLabel setText:[NSString stringWithFormat:@"%d", food.dislikes]];
+    
+    // 去除点赞人数 !!!
+//    [cell.goodLabel setText:[NSString stringWithFormat:@"%d", food.likes]];
+//    [cell.badLabel setText:[NSString stringWithFormat:@"%d", food.dislikes]];
+    
     [cell.priceLabel setText:[NSString stringWithFormat:@"$%.2f", food.price]];
     
     //NSArray *arr = food.extras;
-    [cell.extraButton setHidden:YES];
+//    [cell.extraButton setHidden:YES];
     
     NSURL *imageUrl = [NSURL URLWithString:food.pic];
     [cell.picView sd_setImageWithURL:imageUrl];

@@ -19,16 +19,19 @@
     [self.currNumLabel setFont:[UIFont fontWithName:fontName size:20]];
     [self.nameLabel setFont:[UIFont fontWithName:fontName size:15]];
     [self.priceLabel setFont:[UIFont fontWithName:fontName size:25]];
-    [self.goodLabel setFont:[UIFont fontWithName:fontName size:12]];
-    [self.badLabel setFont:[UIFont fontWithName:fontName size:12]];
+    
+//    [self.goodLabel setFont:[UIFont fontWithName:fontName size:12]];
+//    [self.badLabel setFont:[UIFont fontWithName:fontName size:12]];
+    
     [self.descriptionLabel setFont:[UIFont fontWithName:fontName size:12]];
     
     [self.descriptionLabel setTextColor:[UIColor grayColor]];
     
-    [self.extraButton.titleLabel setFont:[UIFont fontWithName:fontName size:15]];
+//    [self.extraButton.titleLabel setFont:[UIFont fontWithName:fontName size:15]];
     
     [self.currNumLabel setTextColor:color];
-    [self.goodLabel setTextColor:color];
+    
+//    [self.goodLabel setTextColor:color];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

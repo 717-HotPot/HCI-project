@@ -91,9 +91,9 @@
                                                                              andID:[Dict objectForKey:@"foodid"]
                                                                             andPrice:[[Dict objectForKey:@"price"] doubleValue]
                                                                               andPic:[Dict objectForKey:@"pic"]
-                                                                            andLikes:[[Dict objectForKey:@"good_num"] intValue]
-                                                                         andDislikes:[[Dict objectForKey:@"bad_num"] intValue]
-                                                                           andExtras:[Dict objectForKey:@"extraFood"]
+//                                                                            andLikes:[[Dict objectForKey:@"good_num"] intValue]
+//                                                                         andDislikes:[[Dict objectForKey:@"bad_num"] intValue]
+//                                                                           andExtras:[Dict objectForKey:@"extraFood"]
                                                                       andDescription:[Dict objectForKey:@"description"]];
                      [_foodArr addObject:caFoodDetail];
                  }
@@ -198,14 +198,14 @@
     }else{
         CAFoodDetail *caFoodDetail = [_foodArr objectAtIndex:[[self.tableView indexPathForCell:cell] row]];
         
-        CAFoodDetailExtraView *extraView =
-        [[CAFoodDetailExtraView alloc] initWithFrame:CGRectMake(MARGIN,
-                                                                self.view.center.y + 22 - ([caFoodDetail.extras count] * 80) / 2,
-                                                                self.view.frame.size.width - 2 * MARGIN,
-                                                                [caFoodDetail.extras count] * 80)
-                                           withExtra:caFoodDetail.extras];
-        extraView.delegate = self;
-        [extraView showInView:self.view];
+//        CAFoodDetailExtraView *extraView =
+//        [[CAFoodDetailExtraView alloc] initWithFrame:CGRectMake(MARGIN,
+//                                                                self.view.center.y + 22 - ([caFoodDetail.extras count] * 80) / 2,
+//                                                                self.view.frame.size.width - 2 * MARGIN,
+//                                                                [caFoodDetail.extras count] * 80)
+//                                           withExtra:caFoodDetail.extras];
+//        extraView.delegate = self;
+//        [extraView showInView:self.view];
     }
 }
 
@@ -239,19 +239,21 @@
         CAFoodDetail *food = [_foodArr objectAtIndex:indexPath.row];
         
         [cell.nameLabel setText:[NSString stringWithFormat:@"%@", food.name]];
-        [cell.goodLabel setText:[NSString stringWithFormat:@"%d", food.likes]];
-        [cell.badLabel setText:[NSString stringWithFormat:@"%d", food.dislikes]];
+        
+//        [cell.goodLabel setText:[NSString stringWithFormat:@"%d", food.likes]];
+//        [cell.badLabel setText:[NSString stringWithFormat:@"%d", food.dislikes]];
+        
         [cell.priceLabel setText:[NSString stringWithFormat:@"$%.2f", food.price]];
         [cell.descriptionLabel setText:[NSString stringWithFormat:@"%@", food.foodDescription]];
         
-        //NSArray *arr = food.extras;
-        if([food.extras count] == 0){
-            [cell.extraButton setBackgroundImage:[UIImage imageNamed:@"BUTTON_BG_GRAY_EXTRA"] forState:UIControlStateNormal];
-            [cell.extraButton setUserInteractionEnabled:NO];
-        }else{
-            [cell.extraButton setBackgroundImage:[UIImage imageNamed:@"BUTTON_BG_DEFAULT_EXTRA"] forState:UIControlStateNormal];
-            [cell.extraButton setUserInteractionEnabled:YES];
-        }
+//        //NSArray *arr = food.extras;
+//        if([food.extras count] == 0){
+//            [cell.extraButton setBackgroundImage:[UIImage imageNamed:@"BUTTON_BG_GRAY_EXTRA"] forState:UIControlStateNormal];
+//            [cell.extraButton setUserInteractionEnabled:NO];
+//        }else{
+//            [cell.extraButton setBackgroundImage:[UIImage imageNamed:@"BUTTON_BG_DEFAULT_EXTRA"] forState:UIControlStateNormal];
+//            [cell.extraButton setUserInteractionEnabled:YES];
+//        }
         
         NSURL *imageUrl = [NSURL URLWithString:food.pic];
         [cell.picView sd_setImageWithURL:imageUrl];

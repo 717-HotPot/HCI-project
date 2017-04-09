@@ -24,14 +24,19 @@
 
 @property (nonnull, nonatomic) IBOutlet UILabel *nameLabel;
 @property (nonnull, nonatomic) IBOutlet UILabel *priceLabel;
-@property (nonnull, nonatomic) IBOutlet UILabel *goodLabel;
-@property (nonnull, nonatomic) IBOutlet UILabel *badLabel;
+
+// !!去除点赞人数
+//@property (nonnull, nonatomic) IBOutlet UILabel *goodLabel;
+//@property (nonnull, nonatomic) IBOutlet UILabel *badLabel;
+
+
 @property (nonnull, nonatomic) IBOutlet UILabel *descriptionLabel;
 
 @property (nonnull, nonatomic) IBOutlet UIButton *minusButton;
 @property (nonnull, nonatomic) IBOutlet UILabel *currNumLabel;
 @property (nonnull, nonatomic) IBOutlet UIButton *addButton;
 
-@property (nonnull, nonatomic) IBOutlet UIButton *extraButton;
+// !!去除extra按钮
+//@property (nonnull, nonatomic) IBOutlet UIButton *extraButton;
 
 @end
