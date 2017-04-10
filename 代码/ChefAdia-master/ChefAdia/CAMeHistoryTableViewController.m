@@ -215,9 +215,15 @@
     paragraph.lineBreakMode = NSLineBreakByWordWrapping;
     paragraph.alignment = NSTextAlignmentCenter;
     
-    NSDictionary *attributes = @{NSFontAttributeName: [UIFont fontWithName:[Utilities getFont] size:15.0f],
-                                 NSForegroundColorAttributeName: [Utilities getColor],
+    NSLog(@"%@", [UIFont fontWithName:[Utilities getFont] size:15.0f]);
+    NSLog(@"%@", [Utilities getColor]);
+    NSLog(@"%@", paragraph);
+    
+    NSDictionary *attributes = @{NSForegroundColorAttributeName: [Utilities getColor],
                                  NSParagraphStyleAttributeName: paragraph};
+    
+    NSLog(@"%@", @"NSDictionary *attributes");
+    NSLog(@"%@", paragraph);
     
     return [[NSAttributedString alloc] initWithString:text attributes:attributes];
 }
