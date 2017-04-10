@@ -15,12 +15,24 @@
     return [UIColor colorWithRed:193.0/255.0 green:85.0/255.0 blue:76.0/255.0 alpha:1.0];
 }
 
++ (NSString *)getPingFang{
+    return @"PingFangSC";
+}
+
++ (NSString *)getPingFangThin{
+    return @"PingFangSC-Thin";
+}
+
++ (NSString *)getPingFangSemibold{
+    return @"PingFangSC-Semibold";
+}
+
 + (NSString *)getFont{
-    return @"CenturyGothic";
+    return @"PingFangSC";
 }
 
 + (NSString *)getBoldFont{
-    return @"CenturyGothic-Bold";
+    return @"PingFangSC-Semibold";
 }
 
 + (UIColor *)getWechatColor{

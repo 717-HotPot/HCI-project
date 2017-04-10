@@ -8,6 +8,4 @@
 
 *.pbxproj
 
-代码/ChefAdia-master/ChefAdia.xcworkspace/xcuserdata/kylin.xcuserdatad/UserInterfaceState.xcuserstate
-
-*.xcuserstate
+UserInterfaceState.xcuserstate
