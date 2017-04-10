@@ -13,6 +13,8 @@
 
 + (UIColor *)getColor;
 + (UIColor *)getWechatColor;
++ (UIColor *)getOrangeColor;
++ (UIColor *)getPinkColor;
 
 + (NSString *)getFont;
 + (NSString *)getBoldFont;

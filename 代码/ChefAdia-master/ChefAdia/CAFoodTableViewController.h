@@ -15,7 +15,6 @@
 //@property (nonnull, nonatomic) IBOutlet UILabel *name2Label;
 //@property (nonnull, nonatomic) IBOutlet UILabel *contactLabel;
 //@property (nonnull, nonatomic) IBOutlet UILabel *menuLabel;
-//
 //@property (nonnull, nonatomic) IBOutlet UIButton *easyOrderButton;
 
 @property (nonnull, nonatomic) NSMutableArray *menuArr;

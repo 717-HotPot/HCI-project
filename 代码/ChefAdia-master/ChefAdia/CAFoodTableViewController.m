@@ -122,11 +122,13 @@
         }
          success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
              NSDictionary *resultDict = (NSDictionary *)responseObject;
+             // 获取数据成功
              if([[resultDict objectForKey:@"condition"] isEqualToString:@"success"]){
                  
                  [hud hideAnimated:YES];
                  
                  NSArray *resultArr = (NSArray *)[resultDict objectForKey:@"data"];
+                 // 遍历结果填充界面
                  for(NSDictionary *dict in resultArr){
                      CAFoodMenu *tmpMenu = [[CAFoodMenu alloc] initWithID:[[dict valueForKey:@"menuid"] intValue]
                                                                    andPic:[dict valueForKey:@"pic"]
@@ -150,6 +152,8 @@
     return 2;
 }
 
+
+// 返回有多少个Sections
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     switch (section) {
         case 1:
@@ -159,19 +163,29 @@
     }
 }
 
+// 对应的section有多少个元素，也就是多少行
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if(indexPath.section == 1){
         //注册 nib 的方法，来使用.xib 的cell
         static NSString *CellIdentifier = @"CAFoodTableViewCell";
         UINib *nib = [UINib nibWithNibName:@"CAFoodTableViewCell" bundle:nil];
         [tableView registerNib:nib forCellReuseIdentifier:CellIdentifier];
+        
         CAFoodTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         
         //配置 cell 细节
         CAFoodMenu *item = _menuArr[indexPath.row];
-        cell.nameLabel.text = [item name];
-        cell.numberLabel.text = [NSString stringWithFormat:@"%d SELECTION%s", [item number], [item number] <= 1 ? "" : "S"];
         
+        // 设置名字标签!!!
+        cell.nameLabel.text = [item name];
+        cell.nameLabel.font = [UIFont fontWithName:@".SFNSDisplay" size:8];
+        cell.nameLabel.textColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:1/1.0];
+
+        // 设置数目标签!!!
+        cell.numberLabel.text = [NSString stringWithFormat:@"%d selection%s", [item number], [item number] <= 1 ? "" : "s"];
+        cell.numberLabel.font = [UIFont fontWithName:@".SFNSDisplay" size:6];
+        cell.numberLabel.textColor = [Utilities getOrangeColor];
+
         NSURL *imageUrl = [NSURL URLWithString:[item pic]];
         [cell.bgView sd_setImageWithURL:imageUrl];
         
@@ -180,6 +194,7 @@
         return [super tableView:tableView cellForRowAtIndexPath:indexPath];
     }
 }
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if(indexPath.section == 1){

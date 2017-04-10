@@ -13,8 +13,6 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    _nameLabel.font = [UIFont fontWithName:[Utilities getBoldFont] size:30];
-    _numberLabel.font = [UIFont fontWithName:[Utilities getFont] size:20];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
