@@ -18,7 +18,7 @@
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="LmS-Iz-gRZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="LmS-Iz-gRZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1809,7 +1809,7 @@
         <image name="bg_me-1" width="375" height="334"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7hE-Gd-Glp"/>
         <segue reference="vYE-hH-yYs"/>
+        <segue reference="ngg-pF-WOd"/>
     </inferredMetricsTieBreakers>
 </document>
