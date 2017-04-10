@@ -196,7 +196,7 @@
         [alertC addAction:okAction];
         [self presentViewController:alertC animated:YES completion:nil];
     }else{
-        CAFoodDetail *caFoodDetail = [_foodArr objectAtIndex:[[self.tableView indexPathForCell:cell] row]];
+//        CAFoodDetail *caFoodDetail = [_foodArr objectAtIndex:[[self.tableView indexPathForCell:cell] row]];
         
 //        CAFoodDetailExtraView *extraView =
 //        [[CAFoodDetailExtraView alloc] initWithFrame:CGRectMake(MARGIN,
