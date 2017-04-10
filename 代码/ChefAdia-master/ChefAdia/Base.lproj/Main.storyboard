@@ -18,7 +18,7 @@
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="LmS-Iz-gRZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="LmS-Iz-gRZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -67,20 +67,6 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lct-tx-XAL" id="p7z-KG-jlI">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="4eo-zk-iPj">
-                                                    <rect key="frame" x="20" y="19.5" width="51" height="1"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="nLX-6l-SFe">
-                                                    <rect key="frame" x="304" y="19.5" width="51" height="1"/>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="nLX-6l-SFe" firstAttribute="centerY" secondItem="p7z-KG-jlI" secondAttribute="centerY" id="5A4-5m-f3O"/>
-                                                <constraint firstItem="4eo-zk-iPj" firstAttribute="centerY" secondItem="p7z-KG-jlI" secondAttribute="centerY" id="CX9-br-7Gp"/>
-                                                <constraint firstAttribute="trailing" secondItem="nLX-6l-SFe" secondAttribute="trailing" constant="20" id="T9V-Zc-284"/>
-                                                <constraint firstItem="4eo-zk-iPj" firstAttribute="leading" secondItem="p7z-KG-jlI" secondAttribute="leading" constant="20" id="yhR-eb-2OC"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -113,7 +99,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKj-MR-Vpx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1502" y="-1140"/>
+            <point key="canvasLocation" x="1501.5999999999999" y="-1140.1799100449775"/>
         </scene>
         <!--CAFoodDetailTableViewController-->
         <scene sceneID="Cui-d5-HHu">
@@ -1817,7 +1803,6 @@
         <image name="BUTTON_BG_DEFAULT_SHORT" width="500" height="100"/>
         <image name="BUTTON_BG_GRAY" width="2000" height="200"/>
         <image name="BUTTON_BG_VISA_SHORT" width="1000" height="200"/>
-        <image name="Line" width="51" height="1"/>
         <image name="Logo" width="222" height="180"/>
         <image name="Logo_Color" width="104" height="84"/>
         <image name="MINUS" width="76" height="76"/>
