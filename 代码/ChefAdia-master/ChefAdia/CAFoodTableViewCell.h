@@ -10,7 +10,8 @@
 
 @interface CAFoodTableViewCell : UITableViewCell
 
-@property (nonatomic, nonnull) IBOutlet UIImageView *bgView;
+@property (nonatomic, nonnull) IBOutlet UIImageView *BackImage;
+
 @property (nonatomic, nonnull) IBOutlet UILabel *nameLabel;
 @property (nonatomic, nonnull) IBOutlet UILabel *numberLabel;
 

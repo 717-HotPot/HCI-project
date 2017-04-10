@@ -173,9 +173,14 @@
         
         CAFoodTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         
+        
         //配置 cell 细节
         CAFoodMenu *item = _menuArr[indexPath.row];
         
+        NSURL *imageUrl = [NSURL URLWithString:[item pic]];
+//        [cell.bgView sd_setImageWithURL:imageUrl];
+        [cell.BackImage sd_setImageWithURL:imageUrl];
+
         // 设置名字标签!!!
         cell.nameLabel.text = [item name];
         cell.nameLabel.font = [UIFont fontWithName:@".SFNSDisplay" size:8];
@@ -186,8 +191,8 @@
         cell.numberLabel.font = [UIFont fontWithName:@".SFNSDisplay" size:6];
         cell.numberLabel.textColor = [Utilities getOrangeColor];
 
-        NSURL *imageUrl = [NSURL URLWithString:[item pic]];
-        [cell.bgView sd_setImageWithURL:imageUrl];
+        
+        
         
         return cell;
     }else{
