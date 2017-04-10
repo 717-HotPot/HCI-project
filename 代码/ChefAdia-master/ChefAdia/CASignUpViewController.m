@@ -33,7 +33,7 @@
     fontName = [Utilities getFont];
     color = [Utilities getColor];
     
-    _backgroundView.image = [UIImage imageNamed:@"Background"];
+    //    _backgroundView.image = [UIImage imageNamed:@"Background"];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsCompact];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     
@@ -45,14 +45,31 @@
     _userNameText.delegate = self;
     _passwordText.delegate = self;
     
-    _emailText.layer.cornerRadius = 20.0;
-    _userNameText.layer.cornerRadius = 20.0;
-    _passwordText.layer.cornerRadius = 20.0;
+    _emailText.layer.cornerRadius = 21.0;
+    _userNameText.layer.cornerRadius = 21.0;
+    _passwordText.layer.cornerRadius = 21.0;
     
+    UIColor *placeholder = [UIColor whiteColor];
+    
+    _emailText.attributedPlaceholder = [[NSAttributedString alloc]initWithString:@"email" attributes:@{NSForegroundColorAttributeName: placeholder}];
+    _userNameText.attributedPlaceholder = [[NSAttributedString alloc]initWithString:@"username" attributes:@{NSForegroundColorAttributeName: placeholder}];
+    _passwordText.attributedPlaceholder = [[NSAttributedString alloc]initWithString:@"password" attributes:@{NSForegroundColorAttributeName: placeholder}];
+    
+    CGRect rect =_emailText.frame;
+    rect.size.height = 42;
+    _emailText.frame = rect;
+    
+    CGRect rect2 =_userNameText.frame;
+    rect2.size.height = 42;
+    _userNameText.frame = rect2;
+    
+    CGRect rect3 =_passwordText.frame;
+    rect3.size.height = 42;
+    _passwordText.frame = rect3;
     
     _signUpButton.titleLabel.font = [UIFont fontWithName:fontName size:20];
     _signUpButton.backgroundColor = [UIColor clearColor];
-    [_signUpButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    //    [_signUpButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
     //添加手势，点击屏幕其他区域关闭键盘的操作
     UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
@@ -130,14 +147,14 @@
                       [alertC addAction:okAction];
                       [self presentViewController:alertC animated:YES completion:nil];
                   }
-
+                  
               } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                   NSLog(@"FAILED");
                   NSLog(@"Error: %@", error);
               }];
         
     }
-
+    
 }
 
 - (void)hideKeyboard{

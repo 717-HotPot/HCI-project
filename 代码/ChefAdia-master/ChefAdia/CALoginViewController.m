@@ -32,7 +32,7 @@
     fontName = [Utilities getFont];
     color = [Utilities getColor];
     
-    _backgroundView.image = [UIImage imageNamed:@"Background"];
+//    _backgroundView.image = [UIImage imageNamed:@"Background"];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsCompact];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     
@@ -43,9 +43,22 @@
     _emailText.layer.cornerRadius = 20.0;
     _passwordText.layer.cornerRadius = 20.0;
     
+    UIColor *placeholder = [UIColor whiteColor];
+    
+    _emailText.attributedPlaceholder = [[NSAttributedString alloc]initWithString:@"email" attributes:@{NSForegroundColorAttributeName: placeholder}];
+    _passwordText.attributedPlaceholder = [[NSAttributedString alloc]initWithString:@"password" attributes:@{NSForegroundColorAttributeName: placeholder}];
+    
+    CGRect rect =_emailText.frame;
+    rect.size.height = 42;
+    _emailText.frame = rect;
+    
+    CGRect rect2 =_passwordText.frame;
+    rect2.size.height = 42;
+    _passwordText.frame = rect2;
+    
     _loginButton.titleLabel.font = [UIFont fontWithName:fontName size:20];
     _loginButton.backgroundColor = [UIColor clearColor];
-    [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 }
 
 - (IBAction)loginAction:(id)sender{
