@@ -60,7 +60,7 @@
 
 - (void)checkEasyOrder{
     if([[NSUserDefaults standardUserDefaults] objectForKey:@"easy_order_id"] != NULL){
-        [_easyOrderButton setBackgroundImage:[UIImage imageNamed:@"BUTTON_BG_DEFAULT"] forState:UIControlStateNormal];
+//        [_easyOrderButton setBackgroundImage:[UIImage imageNamed:@"BUTTON_BG_DEFAULT"] forState:UIControlStateNormal];
         [_easyOrderButton setUserInteractionEnabled:YES];
     }else{
         [_easyOrderButton setBackgroundImage:[UIImage imageNamed:@"BUTTON_BG_GRAY"] forState:UIControlStateNormal];

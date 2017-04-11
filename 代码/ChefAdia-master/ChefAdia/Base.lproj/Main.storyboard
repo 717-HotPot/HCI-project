@@ -577,7 +577,7 @@
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="Uak-DC-3GR" secondAttribute="height" multiplier="10:1" id="njk-ii-GfC"/>
                                     </constraints>
-                                    <state key="normal" title="LOGOUT" backgroundImage="BUTTON_BG_GRAY">
+                                    <state key="normal" title="LOGOUT" backgroundImage="button-gredient">
                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
                                     <connections>
@@ -1753,7 +1753,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="wwj-mp-efP" secondAttribute="height" multiplier="10:1" id="1qL-PS-MMZ"/>
                                                     </constraints>
-                                                    <state key="normal" title="EASY ORDER" backgroundImage="BUTTON_BG_DEFAULT">
+                                                    <state key="normal" title="EASY ORDER" backgroundImage="button-gredient">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
@@ -1841,9 +1841,7 @@
     </scenes>
     <resources>
         <image name="ADD" width="76" height="76"/>
-        <image name="BUTTON_BG_DEFAULT" width="2000" height="200"/>
         <image name="BUTTON_BG_DEFAULT_SHORT" width="500" height="100"/>
-        <image name="BUTTON_BG_GRAY" width="2000" height="200"/>
         <image name="BUTTON_BG_VISA_SHORT" width="1000" height="200"/>
         <image name="Line" width="51" height="1"/>
         <image name="Logo" width="222" height="180"/>
@@ -1851,11 +1849,12 @@
         <image name="MINUS" width="76" height="76"/>
         <image name="bg_login" width="187" height="333"/>
         <image name="bg_me-1" width="375" height="334"/>
+        <image name="button-gredient" width="285" height="43"/>
         <image name="button-white" width="285" height="43"/>
         <image name="input" width="285" height="43"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2Bj-IJ-b47"/>
+        <segue reference="7hE-Gd-Glp"/>
         <segue reference="95g-ct-HSS"/>
         <segue reference="0ri-Tu-EqJ"/>
     </inferredMetricsTieBreakers>

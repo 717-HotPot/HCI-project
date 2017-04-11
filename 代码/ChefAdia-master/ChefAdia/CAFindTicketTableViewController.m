@@ -26,7 +26,7 @@
     [super viewDidLoad];
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
-    _backgroundView.image = [UIImage imageNamed:@"FIND_TICKET"];
+    _backgroundView.image = [UIImage imageNamed:@"FOOD_TITLE"];
     _titleLabel.font = [UIFont fontWithName:[Utilities getBoldFont] size:30];
     [_titleLabel setText:@"MEAL TICKETS"];
     
