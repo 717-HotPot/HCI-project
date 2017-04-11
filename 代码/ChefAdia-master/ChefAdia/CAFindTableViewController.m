@@ -41,14 +41,14 @@
     NSString *subText;
     switch (indexPath.row) {
         case 0:
-            img = [UIImage imageNamed:@"FIND_1"];
-            mainText = @"MY MENU";
-            subText = @"MAKE YOUR OWN EXCLUSIVE MENU";
+            img = [UIImage imageNamed:@"optianal_menu_bg"];
+            mainText = @"DIY Menu";
+            subText = @"Free to choose ingredients";
             break;
         case 1:
-            img = [UIImage imageNamed:@"FIND_2"];
-            mainText = @"MEAL TICKET";
-            subText = @"BUY SOME VALUABLE MEAL TICKETS";
+            img = [UIImage imageNamed:@"meal_ticket_bg"];
+            mainText = @"Meal Ticket";
+            subText = @"Save your money";
             break;
         default:
             break;

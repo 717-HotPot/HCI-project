@@ -16,7 +16,7 @@
              @"VEG",
              @"SNACK",
              @"SAUCE",
-             @"FLAVOR"];
+             @"TASTE"];
 }
 
 + (NSArray *)getNameList{
@@ -25,7 +25,7 @@
              @"VEGETABLE",
              @"SNACK",
              @"SAUCE",
-             @"FLAVOR"];
+             @"TASTE"];
 }
 
 @end

@@ -29,7 +29,7 @@
     
     _backgroundView.image = [UIImage imageNamed:@"FIND_MENU"];
     _titleLabel.font = [UIFont fontWithName:[Utilities getBoldFont] size:30];
-    [_titleLabel setText:@"EXCLUSIVE MENUS"];
+    [_titleLabel setText:@"My DIY Menu"];
     
     UIBarButtonItem *R1 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                                                         target:self

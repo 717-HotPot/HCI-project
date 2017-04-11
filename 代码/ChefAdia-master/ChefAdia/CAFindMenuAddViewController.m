@@ -101,11 +101,14 @@
         }
     }
     
+    
     for(UIButton *button in self.menuStackView.subviews){
         if(button.tag == self.currentStep - 1){
-            [button setBackgroundColor: [Utilities getColor]];
+            // 变为红色!!!!
+            [button setBackgroundColor: [Utilities getOrangeColor]];
             [button.titleLabel setTextColor:[UIColor whiteColor]];
         }else{
+            // 变为灰色!!!
             [button setBackgroundColor: [UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1.0]];
             [button.titleLabel setTextColor:[Utilities getColor]];
         }
@@ -123,6 +126,7 @@
 }
 
 - (Boolean)isChosenFinished:(int)i{
+    // !!!改成TRUE就可以随便点击顺序!!!! 但是无法提交!!! TODO
     if([[self.chosenFoodArr[i] objectForKey:@"foodid"] isEqualToString:@""]
        || [self.chosenNumArr[i] intValue] == 0){
         return false;
@@ -211,7 +215,6 @@
 }
 
 #pragma mark - Table view data source
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
