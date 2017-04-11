@@ -41,7 +41,7 @@
     NSString *subText;
     switch (indexPath.row) {
         case 0:
-            img = [UIImage imageNamed:@"optianal_menu_bg"];
+            img = [UIImage imageNamed:@"DIY_menu_bg"];
             mainText = @"DIY Menu";
             subText = @"Free to choose ingredients";
             break;
