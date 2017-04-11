@@ -129,7 +129,7 @@
     // !!!改成TRUE就可以随便点击顺序!!!! 但是无法提交!!! TODO
     if([[self.chosenFoodArr[i] objectForKey:@"foodid"] isEqualToString:@""]
        || [self.chosenNumArr[i] intValue] == 0){
-        return false;
+        return true;
     }else{
         return true;
     }
