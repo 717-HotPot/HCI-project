@@ -21,23 +21,23 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q3p-9p-U0z">
-                        <rect key="frame" x="10" y="8" width="279" height="127"/>
+                        <rect key="frame" x="10" y="8" width="279" height="126.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="q3p-9p-U0z" secondAttribute="height" multiplier="375:170" id="MGM-bC-6Pv"/>
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kSH-5j-6dp">
-                        <rect key="frame" x="114.5" y="51" width="70.5" height="41"/>
+                        <rect key="frame" x="87" y="36.5" width="126.5" height="69.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9r-A2-re9">
-                                <rect key="frame" x="0.0" y="0.0" width="70.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="0.0" width="126.5" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="NUMBER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0m-DB-vLp">
-                                <rect key="frame" x="0.0" y="20.5" width="70.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="32.5" width="126.5" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
