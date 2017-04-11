@@ -35,8 +35,8 @@
     _userNameLabel.font = [UIFont fontWithName:[Utilities getBoldFont] size:20];
     _addressLabel.font = [UIFont fontWithName:fontName size:15];
     
-    _historyView.image = [UIImage imageNamed:@"HISTORY_ICON"];
-    _settingsView.image = [UIImage imageNamed:@"SETTINGS_ICON"];
+    _historyView.image = [UIImage imageNamed:@"food_history"];
+    _settingsView.image = [UIImage imageNamed:@"setting"];
     
     _avatarView.layer.cornerRadius = _avatarView.frame.size.width/2;//裁成圆角
     _avatarView.layer.masksToBounds = YES;//隐藏裁剪掉的部分

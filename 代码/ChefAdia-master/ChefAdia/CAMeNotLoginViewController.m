@@ -24,7 +24,7 @@
     fontName = [Utilities getFont];
     color = [Utilities getColor];
     
-    _backgroundView.image = [UIImage imageNamed:@"Background"];
+//    _backgroundView.image = [UIImage imageNamed:@"Background"];
     
     _logoView.image = [UIImage imageNamed:@"Logo"];
     _mainLabel.font = [UIFont fontWithName:[Utilities getBoldFont] size:20];
