@@ -30,22 +30,22 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zkP-qd-Bi3">
-                        <rect key="frame" x="23" y="32.5" width="274" height="184.5"/>
+                        <rect key="frame" x="8" y="25.5" width="304" height="198.5"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8WW-y7-qhd">
-                                <rect key="frame" x="0.0" y="0.0" width="274" height="123.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="137.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="8WW-y7-qhd" secondAttribute="height" multiplier="284:128" id="bXl-Vh-Imw"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VEC-dv-r3s">
-                                <rect key="frame" x="116" y="133.5" width="42" height="20.5"/>
+                                <rect key="frame" x="131" y="147.5" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Fk1-9Q-Oi1">
-                                <rect key="frame" x="116" y="164" width="42" height="20.5"/>
+                                <rect key="frame" x="131" y="178" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -59,12 +59,12 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="k7n-Yj-kAx" secondAttribute="trailing" constant="10" id="2uC-11-HLV"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="zkP-qd-Bi3" secondAttribute="trailing" constant="15" id="G9H-O2-iQD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zkP-qd-Bi3" secondAttribute="trailing" id="G9H-O2-iQD"/>
                     <constraint firstItem="zkP-qd-Bi3" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="WaZ-Bz-Mug"/>
                     <constraint firstItem="k7n-Yj-kAx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Xtv-Hs-sSI"/>
                     <constraint firstAttribute="bottom" secondItem="k7n-Yj-kAx" secondAttribute="bottom" constant="10" id="aE3-qZ-KkQ"/>
                     <constraint firstItem="k7n-Yj-kAx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="eKn-5p-Aib"/>
-                    <constraint firstItem="zkP-qd-Bi3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="s88-74-2a5"/>
+                    <constraint firstItem="zkP-qd-Bi3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="s88-74-2a5"/>
                     <constraint firstItem="zkP-qd-Bi3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vdX-4d-nEb"/>
                 </constraints>
             </tableViewCellContentView>

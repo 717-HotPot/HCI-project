@@ -183,12 +183,12 @@
 
         // 设置名字标签!!!
         cell.nameLabel.text = [item name];
-        cell.nameLabel.font = [UIFont fontWithName:@".SFNSDisplay" size:8];
-        cell.nameLabel.textColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:1/1.0];
+        cell.nameLabel.font = [UIFont fontWithName:@".SFNSDisplay" size:20];
+        cell.nameLabel.textColor = [UIColor whiteColor];
 
         // 设置数目标签!!!
         cell.numberLabel.text = [NSString stringWithFormat:@"%d selection%s", [item number], [item number] <= 1 ? "" : "s"];
-        cell.numberLabel.font = [UIFont fontWithName:@".SFNSDisplay" size:6];
+        cell.numberLabel.font = [UIFont fontWithName:@".SFNSDisplay" size:8];
         cell.numberLabel.textColor = [Utilities getOrangeColor];
 
         

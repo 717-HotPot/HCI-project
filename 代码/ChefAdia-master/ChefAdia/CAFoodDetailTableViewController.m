@@ -42,6 +42,7 @@
     [self.naviItem setTitle:[_foodType name]];
     
     [self.numberLabel setFont:[UIFont fontWithName:fontName size:20]];
+    
     [self.billCountItem setTintColor:color];
     [self.buyItem setTintColor:color];
     
@@ -100,7 +101,7 @@
                  
                  weakSelf.foodNum = [[subResultDict objectForKey:@"num"] intValue];
                 
-                 [weakSelf.numberLabel setText:[NSString stringWithFormat:@"%d SELECTION%s",
+                 [weakSelf.numberLabel setText:[NSString stringWithFormat:@"%d selection%s",
                                                 weakSelf.foodNum, weakSelf.foodNum <= 1 ? "" : "S"]];
                  
                  NSURL *imageUrl = [NSURL URLWithString:[subResultDict objectForKey:@"pic"]];
