@@ -35,11 +35,11 @@
 
 - (void)setIsEasyOrder:(Boolean)isEasyOrder{
     if(isEasyOrder){
-        [self.easyOrderButton setBackgroundImage:[UIImage imageNamed:@"BUTTON_BG_DEFAULT_SHORT"] forState:UIControlStateNormal];
+        [self.easyOrderButton setBackgroundImage:[UIImage imageNamed:@"button-gredient"] forState:UIControlStateNormal];
         [self.easyOrderButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     }else{
-        [self.easyOrderButton setBackgroundImage:[UIImage imageNamed:@"BUTTON_BG_GRAY_SHORT"] forState:UIControlStateNormal];
-        [self.easyOrderButton setTitleColor:[Utilities getColor] forState:UIControlStateNormal];
+        [self.easyOrderButton setBackgroundImage:[UIImage imageNamed:@"input"] forState:UIControlStateNormal];
+        [self.easyOrderButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     }
 }
 

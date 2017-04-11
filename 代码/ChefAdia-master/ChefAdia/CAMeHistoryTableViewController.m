@@ -161,9 +161,11 @@
         [cell.custLabel setText:@""];
     }
     
-    [cell.orderIDLabel setText:[NSString stringWithFormat:@"Order ID : %@", [self.orderArr[indexPath.row] objectForKey:@"orderid"]]];
-    [cell.timeLabel setText:[self.orderArr[indexPath.row] objectForKey:@"time"]];
-    [cell.priceLabel setText:[NSString stringWithFormat:@"$%.2f", [[self.orderArr[indexPath.row] objectForKey:@"price"] doubleValue]]];
+    [cell.orderIDLabel setText:[NSString stringWithFormat:@"OrderID: %@", [self.orderArr[indexPath.row] objectForKey:@"orderid"]]];
+    NSString *timeString =[self.orderArr[indexPath.row] objectForKey:@"time"];
+//    timeString = [timeString stringByReplacingOccurrencesOfString:@" " withString:@"\n"];
+    [cell.timeLabel setText:[NSString stringWithFormat:@"Date: %@", timeString]];
+    [cell.priceLabel setText:[NSString stringWithFormat:@"Total: $%.2f", [[self.orderArr[indexPath.row] objectForKey:@"price"] doubleValue]]];
     
     if([cell.orderIDLabel.text isEqualToString:[[NSUserDefaults standardUserDefaults] valueForKey:@"easy_order_id"]]){
         [cell setIsEasyOrder:true];
