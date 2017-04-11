@@ -49,8 +49,10 @@
     
     //未选中的字体
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor grayColor], NSForegroundColorAttributeName, [UIFont fontWithName:fontName size:11.0f],NSFontAttributeName,nil] forState:UIControlStateNormal];
+    
     //选中的字体
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, [UIFont fontWithName:fontName size:11.0f],NSFontAttributeName,nil] forState:UIControlStateSelected];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[Utilities getOrangeColor], NSForegroundColorAttributeName, [UIFont fontWithName:fontName size:11.0f],NSFontAttributeName,nil] forState:UIControlStateSelected];
+    
     //更改导航栏字体
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, [UIColor lightGrayColor], NSShadowAttributeName,[NSValue valueWithUIOffset:UIOffsetMake(0, 0)], NSShadowAttributeName, fontName, NSFontAttributeName,nil]];
     
@@ -103,12 +105,21 @@
     
     //设置 tabBarItems
     [self.tabBarItem setImageInsets:UIEdgeInsetsMake(10, 0, -10, 0)];
-    [[self.tabBar.items objectAtIndex:0] setTitle:@"FOOD"];
-    [[self.tabBar.items objectAtIndex:0] setImage:[UIImage imageNamed:@"TAB_FOOD"]];
-    [[self.tabBar.items objectAtIndex:1] setTitle:@"FIND"];
-    [[self.tabBar.items objectAtIndex:1] setImage:[UIImage imageNamed:@"TAB_FIND"]];
-    [[self.tabBar.items objectAtIndex:2] setTitle:@"ME"];
-    [[self.tabBar.items objectAtIndex:2] setImage:[UIImage imageNamed:@"TAB_ME"]];
+    UITabBarItem * foodItem = [self.tabBar.items objectAtIndex:0];
+    UITabBarItem * findItem = [self.tabBar.items objectAtIndex:1];
+    UITabBarItem * meItem = [self.tabBar.items objectAtIndex:2];
+    
+    foodItem.title =@"FOOD";
+    foodItem.image =[UIImage imageNamed:@"home_off"];
+    foodItem.selectedImage = [[UIImage imageNamed:@"home_on"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    findItem.title =@"FIND";
+    findItem.image =[UIImage imageNamed:@"find_off"];
+    findItem.selectedImage = [[UIImage imageNamed:@"find_on"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    meItem.title =@"ME";
+    meItem.image =[UIImage imageNamed:@"me_off"];
+    meItem.selectedImage = [[UIImage imageNamed:@"me_on"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 }
 
 - (void)setColor{
@@ -124,7 +135,7 @@
     [self.navigationController.navigationBar setTitleTextAttributes:@{
                                                                       NSForegroundColorAttributeName : [UIColor whiteColor]
                                                                       }];
-    self.tabBar.barTintColor = color;
+
     self.tabBar.tintColor = [UIColor whiteColor];
 }
 
@@ -140,19 +151,22 @@
 //                                                                                action:nil];
             //            self.naviItem.rightBarButtonItems = [NSArray arrayWithObjects:R1,nil];
             self.naviItem.rightBarButtonItems = nil;
+           
         }
             break;
         case 1:
         {
             [self.naviItem setTitle:@"FIND"];
             self.naviItem.rightBarButtonItems = nil;
+            
+           
         }
             break;
         case 2:
         {
             [self.naviItem setTitle:@"ME"];
             self.naviItem.rightBarButtonItems = nil;
-           
+         
         }
             break;
         default:
