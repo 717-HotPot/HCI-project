@@ -102,7 +102,8 @@
                  weakSelf.foodNum = [[subResultDict objectForKey:@"num"] intValue];
                 
                  [weakSelf.numberLabel setText:[NSString stringWithFormat:@"%d selection%s",
-                                                weakSelf.foodNum, weakSelf.foodNum <= 1 ? "" : "S"]];
+                                                weakSelf.foodNum, weakSelf.foodNum <= 1 ? "" : "s"]];
+                 
                  
                  NSURL *imageUrl = [NSURL URLWithString:[subResultDict objectForKey:@"pic"]];
                  [weakSelf.titleImgView sd_setImageWithURL:imageUrl];
@@ -239,13 +240,17 @@
         
         CAFoodDetail *food = [_foodArr objectAtIndex:indexPath.row];
         
+        // 修改详细介绍字体!!!
         [cell.nameLabel setText:[NSString stringWithFormat:@"%@", food.name]];
+        cell.nameLabel.font = [UIFont fontWithName:[Utilities getFont] size:20];
         
 //        [cell.goodLabel setText:[NSString stringWithFormat:@"%d", food.likes]];
 //        [cell.badLabel setText:[NSString stringWithFormat:@"%d", food.dislikes]];
         
         [cell.priceLabel setText:[NSString stringWithFormat:@"$%.2f", food.price]];
+        
         [cell.descriptionLabel setText:[NSString stringWithFormat:@"%@", food.foodDescription]];
+        cell.descriptionLabel.font = [UIFont fontWithName:[Utilities getFont] size:10];
         
 //        //NSArray *arr = food.extras;
 //        if([food.extras count] == 0){

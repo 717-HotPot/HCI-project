@@ -10,12 +10,14 @@
 
 @interface CAFoodTableViewController : UITableViewController
 
-//@property (nonnull, nonatomic) IBOutlet UIImageView *backgroundView;
-//@property (nonnull, nonatomic) IBOutlet UILabel *name1Label;
-//@property (nonnull, nonatomic) IBOutlet UILabel *name2Label;
-//@property (nonnull, nonatomic) IBOutlet UILabel *contactLabel;
-//@property (nonnull, nonatomic) IBOutlet UILabel *menuLabel;
-//@property (nonnull, nonatomic) IBOutlet UIButton *easyOrderButton;
+@property (nonnull, nonatomic) IBOutlet UIImageView *backgroundView;
+@property (nonnull, nonatomic) IBOutlet UILabel *name1Label;
+@property (nonnull, nonatomic) IBOutlet UILabel *name2Label;
+@property (nonnull, nonatomic) IBOutlet UILabel *contactLabel;
+@property (nonnull, nonatomic) IBOutlet UILabel *menuLabel;
+
+@property (nonnull, nonatomic) IBOutlet UIButton *easyOrderButton;
+
 
 @property (nonnull, nonatomic) NSMutableArray *menuArr;
 

@@ -35,70 +35,70 @@
     fontName = [Utilities getFont];
     
     //加载食物大类
-//    [self loadMenu];
+    //    [self loadMenu];
     
-//    _backgroundView.image = [UIImage imageNamed:@"FOOD_TITLE"];
-//    _menuLabel.font = [UIFont fontWithName:fontName size:15];
-//    _name1Label.font = [UIFont fontWithName:[Utilities getBoldFont] size:40];
-//    _name2Label.font = [UIFont fontWithName:fontName size:20];
-//    _contactLabel.font = [UIFont fontWithName:fontName size:15];
-//    
-//    [_easyOrderButton.titleLabel setFont: [UIFont fontWithName:[Utilities getBoldFont] size:15]];
-//    [self checkEasyOrder];
+    _backgroundView.image = [UIImage imageNamed:@"FOOD_TITLE"];
+    _menuLabel.font = [UIFont fontWithName:fontName size:15];
+    _name1Label.font = [UIFont fontWithName:[Utilities getBoldFont] size:40];
+    _name2Label.font = [UIFont fontWithName:fontName size:20];
+    _contactLabel.font = [UIFont fontWithName:fontName size:15];
     
-//    _name1Label.text = @"CHEFADIA'S";
-//    _name2Label.text = @"DELICIOUS CHINESE FOOD";
-//    _contactLabel.text = @"XIANLIN AVENUE\n10:00 A.M. ~ 22:00 P.M.";
+    [_easyOrderButton.titleLabel setFont: [UIFont fontWithName:[Utilities getBoldFont] size:15]];
+    [self checkEasyOrder];
+    
+    _name1Label.text = @"CHEFADIA'S";
+    _name2Label.text = @"DELICIOUS CHINESE FOOD";
+    _contactLabel.text = @"XIANLIN AVENUE\n10:00 A.M. ~ 22:00 P.M.";
     
     [self.tableView reloadData];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-//    [self checkEasyOrder];
-//    [self loadMenu];
+    [self checkEasyOrder];
+    //    [self loadMenu];
 }
 
-//
-//- (void)checkEasyOrder{
-//    if([[NSUserDefaults standardUserDefaults] objectForKey:@"easy_order_id"] != NULL){
-//        [_easyOrderButton setBackgroundImage:[UIImage imageNamed:@"BUTTON_BG_DEFAULT"] forState:UIControlStateNormal];
-//        [_easyOrderButton setUserInteractionEnabled:YES];
-//    }else{
-//        [_easyOrderButton setBackgroundImage:[UIImage imageNamed:@"BUTTON_BG_GRAY"] forState:UIControlStateNormal];
-//        [_easyOrderButton setUserInteractionEnabled:NO];
-//    }
-//}
-//
-//- (IBAction)easyOrderAction:(id)sender{
-////    if([_easyOrderButton isUserInteractionEnabled]){
-//    
-//        NSDictionary *tempDict = @{
-//                                   @"userid" : [[NSUserDefaults standardUserDefaults] valueForKey:@"user_id"],
-//                                   };
-//        
-//        AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-//        manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:
-//                                                             @"text/plain",
-//                                                             @"text/html",
-//                                                             nil];
-//        [manager GET:GET_EASY_ORDER_URL
-//          parameters:tempDict
-//            progress:nil
-//             success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
-//                 NSDictionary *resultDict = (NSDictionary *)responseObject;
-//                 if([[resultDict objectForKey:@"condition"] isEqualToString:@"success"]){
-//                     
-//                     [self performSegueWithIdentifier:@"easyOrderSegue" sender:[resultDict objectForKey:@"data"]];
-//                     
-//                 }else{
-//                     NSLog(@"Error, MSG: %@", [resultDict objectForKey:@"message"]);
-//                 }
-//             }
-//             failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//                 NSLog(@"%@",error);
-//             }];
-//    }
-//}
+- (void)checkEasyOrder{
+    if([[NSUserDefaults standardUserDefaults] objectForKey:@"easy_order_id"] != NULL){
+        [_easyOrderButton setBackgroundImage:[UIImage imageNamed:@"BUTTON_BG_DEFAULT"] forState:UIControlStateNormal];
+        [_easyOrderButton setUserInteractionEnabled:YES];
+    }else{
+        [_easyOrderButton setBackgroundImage:[UIImage imageNamed:@"BUTTON_BG_GRAY"] forState:UIControlStateNormal];
+        [_easyOrderButton setUserInteractionEnabled:NO];
+    }
+}
+
+- (IBAction)easyOrderAction:(id)sender{
+    NSLog(@"%@",@"easyOrderAction");
+    if([_easyOrderButton isUserInteractionEnabled]){
+        
+        NSDictionary *tempDict = @{
+                                   @"userid" : [[NSUserDefaults standardUserDefaults] valueForKey:@"user_id"],
+                                   };
+        
+        AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+        manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:
+                                                             @"text/plain",
+                                                             @"text/html",
+                                                             nil];
+        [manager GET:GET_EASY_ORDER_URL
+          parameters:tempDict
+            progress:nil
+             success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
+                 NSDictionary *resultDict = (NSDictionary *)responseObject;
+                 if([[resultDict objectForKey:@"condition"] isEqualToString:@"success"]){
+                     
+                     [self performSegueWithIdentifier:@"easyOrderSegue" sender:[resultDict objectForKey:@"data"]];
+                     
+                 }else{
+                     NSLog(@"Error, MSG: %@", [resultDict objectForKey:@"message"]);
+                 }
+             }
+             failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                 NSLog(@"%@",error);
+             }];
+    }
+}
 
 - (void)loadMenu{
     _menuArr = [[NSMutableArray alloc] init];
